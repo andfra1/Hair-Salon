@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
+    <div class="wrapper" id="wrapper">
+        <header class="header" id="home">
             <div class="header-wrapper">
                 <div class="header-info">
                     Hours: Mon,Tue,Fri,Saturday 10am - 8pm By Appointment Only
@@ -43,16 +43,16 @@
                 <span class="hamburger-line"></span>
             </button>
             <ul class="header-menu" id="menu">
-                <li class="header-menu-item"><a href="#">home</a></li>
+                <li class="header-menu-item"><a href="#home">home</a></li>
                 <!--
                 -->
-                <li class="header-menu-item"><a href="#">about</a></li>
+                <li class="header-menu-item"><a href="#about">about</a></li>
                 <!--
                 -->
                 <li class="header-menu-item"><a href="#">gallery</a></li>
                 <!--
                 -->
-                <li class="header-menu-item"><a href="#">pricelist</a></li>
+                <li class="header-menu-item"><a href="#pricelist">pricelist</a></li>
                 <!--
                 -->
                 <li class="header-menu-item"><a href="#treatments">treatments</a></li>
@@ -61,14 +61,14 @@
                 <li class="header-menu-item"><a href="#map">map</a></li>
                 <!--
                 -->
-                <li class="header-menu-item"><a href="#">contact us</a></li>
+                <li class="header-menu-item"><a href="#contact"  class="contact">contact us</a></li>
             </ul>
             <div class="header-scissors"></div>
         </header>
         <div class="slider">
             <img src="data/img/salonExperience.png" class="slider-salonExp" alt="">
         </div>
-        <article class="welcomeToOurSalon">
+        <article class="welcomeToOurSalon" id="about">
             <div class="content-main content-paddingTopBottom">
                 <h2>Welcome to <strong>Hair Salon</strong></h2>
                 <p>
@@ -104,9 +104,9 @@
                 <div class="treatments-item">
                    <div class="treatments-item-vertical">
                    <div class="tiv-content">
-                    <img src="data/img/item1.jpg" alt="item1" class="treatments-image">
+                    <img src="data/img/item2.jpg" alt="item1" class="treatments-image">
                      </div>
-                      <div class="tiv-content text">
+                      <div class="tiv-content text" id="pricelist">
                        <h1>
                         Our Service
                     </h1>
@@ -117,10 +117,10 @@
                         </a>
                     </div>
                        </div>
-                </div>
-                   <div class="treatments-item-vertical">
+                </div><!--
+                    --><div class="treatments-item-vertical">
                    <div class="tiv-content">
-                    <img src="data/img/item1.jpg" alt="item1" class="treatments-image">
+                    <img src="data/img/item3.jpg" alt="item1" class="treatments-image">
                        </div>
                        <div class="tiv-content text">
                      <h1>
@@ -225,17 +225,14 @@
                     </div>
                 </div>
             </div>
+        </article><!-- servicesAndProcedures E N D 
+        --><article id="map" class="map">
+        <!--<iframe class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19480.552075180974!2d16.933504150838036!3d52.38729929882976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b03083f8b8f%3A0x783ac7212cca21a4!2zUmF0YWplLCBQb3puYcWE!5e0!3m2!1spl!2spl!4v1493029944768" frameborder="0" style="border:0" width="100%" height="320px" allowfullscreen></iframe>-->
         </article>
-<!-- servicesAndProcedures E N D -->
-
-           <article id="map" class="map">
-            <iframe class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19480.552075180974!2d16.933504150838036!3d52.38729929882976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b03083f8b8f%3A0x783ac7212cca21a4!2zUmF0YWplLCBQb3puYcWE!5e0!3m2!1spl!2spl!4v1493029944768" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </article>
-
-        <!-- FOOTER BEGINS ---------------------------------->
-
-
-        <footer class="footer left">
+        <!-- 
+        FOOTER BEGINS 
+        ---------------------------------->
+           <footer class="footer left">
             <div class="content-main content-paddingTopBottom">
                 <div class="footer-sections">
                     <h3>
@@ -250,16 +247,16 @@
                     </h3>
                     <nav class="footer-content">
                         <ul>
-                            <li><a href="#">
+                            <li><a href="#home">
                         Home
                         </a></li>
-                            <li><a href="#">
+                            <li><a href="#about">
                         About
                         </a></li>
-                            <li><a href="#">
+                            <li><a href="#gallery">
                         Gallery
                         </a></li>
-                            <li><a href="#">
+                            <li><a href="#pricelist">
                         Pricelist
                         </a></li>
                             <li><a href="#treatments">
@@ -268,7 +265,7 @@
                             <li><a href="#map">
                         Map
                         </a></li>
-                            <li><a href="#">
+                            <li><a href="#contact" class="contact">
                         Contact us
                         </a></li>
                         </ul>
@@ -287,16 +284,16 @@
                 </div><!--
                 --><div class="footer-sections">
                     <h3>Address</h3>
-                    <address class="footer-content">
-                        <span>
-                            Company Addres,
-                            Street No. 123, City,
+                    <address class="footer-content" id="address">
+                        <span class="address-post">
+                            Company Addres,<br>
+                            Street No. 123, City,<br>
                             Country 987654
                         </span>
-                        <span>
+                        <span class="address-tel">
                            <a href="tel:0987654321">09876543210</a>
                         </span>
-                        <span>
+                        <span class="address-mail">
                            <a href="mailto:info@companyname.com">info@companyname.com</a>
                         </span>
                     </address>
@@ -323,13 +320,49 @@
         var showMenu = function() {
             if (menu.style.display === 'block') {
                 menu.style.display = null;
-            } else //if (menu.style.display === 'block')
-            {
+            } else {
                 menu.style.display = 'block';
             }
         }
 
         burger.addEventListener('click', showMenu, false);
+        
+        var contactData = document.getElementById('address').innerHTML;
+        var contactBttn = document.getElementsByClassName('contact');
+        var wrapper = document.getElementById('wrapper');
+        
+        for (var cont = 0; cont < contactBttn.length; cont++) {
+            contactBttn[cont].addEventListener('click', showContact, false);
+        }
+        
+        function showContact() {
+            var box = document.createElement('div'),
+                closeBttn = document.createElement('button'),
+                frm = document.createElement('form');
+                lbl = document.createElement('label'),
+                inpt = document.createElement('input'),
+                txtArea = document.createElement('textarea'),
+                sendBttn = document.createElement('button');
+            box.className = 'popupAddress footer-content';
+            box.innerHTML = contactData;
+            closeBttn.innerHTML = '[close]';
+            closeBttn.className = 'popupCloseBttn';
+            closeBttn.addEventListener('click', function(){wrapper.removeChild(box);}, false);
+            lbl.textContent = 'Theme: ';
+            lbl.className = 'label';
+            inpt.className = 'inpt';
+            txtArea.className = 'txtArea';
+            sendBttn.className = 'sendBttn';
+            
+            box.appendChild(closeBttn);
+            box.appendChild(frm);
+            box.appendChild(lbl);
+            box.appendChild(inpt);
+            box.appendChild(txtArea);
+            box.appendChild(sendBttn);
+            wrapper.appendChild(box);
+        }
+        showContact();
     </script>
 
 </body>

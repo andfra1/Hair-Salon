@@ -47,10 +47,18 @@ h1,
 h2,
 h3 {
     font-family: Great Vibes, sans-serif;
+    position: relative;
 }
 
 h1 {
     font-size: 4.4em;
+    margin-bottom: 60px;
+    &:after {
+        content: url('img/wavesDouble.png');
+        position: absolute;
+        top: 60px;
+        left:35%;
+    }
 }
 
 h2 {
@@ -610,6 +618,12 @@ article {
     left: 0;
 }
 
+.map {
+    border: 10px solid transparent;
+    border-top-color: #eee;
+    border-bottom-color: #eee;
+}
+
 .map-size {
     width: 100%;
     height: 420px;
@@ -642,6 +656,7 @@ article {
     float: left;
     line-height: 18px;
     font-family: Verdana, sans-serif;
+    position: relative;
 }
 
 .footer-content ul li {
@@ -658,16 +673,46 @@ article {
     display: inline-block;
 }
 
-.footer-sections address {
-    font-style: none;
-}
 
 .footer-sections address>span {
-    padding-left: 10px;
+    padding-left: 20px;
     display: block;
     position: relative;
     margin-bottom: 10px;
 }
+
+.address-post:before {
+    content: url(img/post-ico.jpg);
+    position: absolute;
+    top: 0;
+    left: 0px;
+}
+
+.address-post:hover:before {
+    content: url(img/post-hover-ico.jpg);    
+    }
+
+.address-tel:before {
+    content: url(img/phone-ico.jpg);
+    position: absolute;
+    top: 0;
+    left: 0px;   
+}
+
+.address-tel:hover:before {
+    content: url(img/phone-hover-ico.jpg);    
+    }
+
+.address-mail:before {
+    content: url(img/mail-ico.jpg);
+    position: absolute;
+    top: 0;
+    left: 0px;   
+}
+
+.address-mail:hover:before {
+    content: url(img/mail-hover-ico.jpg);    
+    }
 
 .footer-bottom {
     position: relative;
@@ -683,4 +728,28 @@ article {
     font-size: 0.68rem;
     display: block;
     position: relative;
+}
+
+.popupAddress {
+    position: fixed;
+    display: block;
+    top: 50%;
+    left: 50%;
+    max-width: 320px;
+    height: auto;
+    margin-top: -150px;
+    margin-left: -160px;
+    background-color: red;
+    z-index: 6666;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 45px 5px 5px 5px;
+}
+
+.popupCloseBttn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
 }
