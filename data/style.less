@@ -53,11 +53,13 @@ h3 {
 h1 {
     font-size: 4.4em;
     margin-bottom: 60px;
+    z-index: 1;
     &:after {
         content: url('img/wavesDouble.png');
         position: absolute;
         top: 60px;
-        left: 35%;
+        left: 30%;
+        z-index: -1;
     }
 }
 
@@ -157,10 +159,20 @@ h3 {
     .header-scissors {
         display: none;
     }
-    .hairCare-item {
-        display: block;
-        max-width: 100%;
+    
+    .tih-content {
+    width: 100%;
     }
+    
+    
+    .treatments-item-vertical {
+    width: 100%;
+    display: inline-block;
+}
+.treatments-image {
+    width: 50%;
+}
+
     .popularProcedures {
         display: block;
         width: 100%;
@@ -251,10 +263,18 @@ h3 {
     .header-scissors {
         display: block;
     }
-    .hairCare-item {
-        display: inline-block;
-        max-width: 50%;
+
+    .tih-content {
+    width: 50%;
     }
+    
+    .treatments-item-vertical {
+    width: 50%;
+}
+.treatments-image {
+    width: 100%;
+}
+
     .popularProcedures {
         display: inline-block;
         width: 70%;
@@ -499,26 +519,22 @@ article {
     max-width: 100%;
     height: auto;
     text-align: center;
-    //background-color: red;
     float: left;
-    display: table;
+    display: block;
 }
 
 .tih-content {
-    width: 50%;
     padding: 20px 0;
     height: auto;
-    display: table-cell;
-    float: right;
+    display: inline-block;
+    float: left;
     padding: 2px;
 }
 
 .tiv-content {
     width: 100%;
     height: auto;
-    display: table-cell;
-    float: right;
-    vertical-align: middle;
+    display: block;
     padding: 2px;
 }
 
@@ -526,16 +542,8 @@ article {
     padding: 25px 0;
 }
 
-.treatments-image {
-    max-width: 100%;
-    height: auto;
-    float: left;
-}
-
 .treatments-item-vertical {
-    width: 50%;
     display: inline-block;
-    //background-color: yellowgreen;
 }
 
 .serviceAndProcedures {
@@ -665,19 +673,21 @@ article {
     display: inline-block;
 }
 
-.footer-sections address>span {
+.address-post, .address-phone, .address-mail {
     padding-left: 20px;
     display: block;
     position: relative;
     margin-bottom: 10px;
+    &:before {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
 }
 
 .address-post:before {
     content: url(img/post-ico.jpg);
-    position: absolute;
-    top: 0;
-    left: 0px;
-}
+    }
 
 .address-post:hover:before {
     content: url(img/post-hover-ico.jpg);
@@ -685,10 +695,7 @@ article {
 
 .address-tel:before {
     content: url(img/phone-ico.jpg);
-    position: absolute;
-    top: 0;
-    left: 0px;
-}
+    }
 
 .address-tel:hover:before {
     content: url(img/phone-hover-ico.jpg);
@@ -696,10 +703,7 @@ article {
 
 .address-mail:before {
     content: url(img/mail-ico.jpg);
-    position: absolute;
-    top: 0;
-    left: 0px;
-}
+    }
 
 .address-mail:hover:before {
     content: url(img/mail-hover-ico.jpg);
@@ -724,18 +728,22 @@ article {
 .popupAddress {
     position: fixed;
     display: block;
-    top: 50%;
+    top: 20px;
     left: 50%;
     max-width: 320px;
     height: auto;
-    margin-top: -150px;
     margin-left: -160px;
-    background-color: red;
+    background-color: #fff;
     z-index: 6666;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 45px 5px 5px 5px;
+    font-family: Verdana, sans-serif;
+    padding: 5px;
+    border: 1px solid #666;
+    opaicity: 0;
+    box-shadow: 10px 10px 15px 0px #ccc;
+}
+
+.popupAddress h2 {
+    margin: 0;
 }
 
 .popupCloseBttn {
@@ -743,4 +751,25 @@ article {
     top: 10px;
     right: 10px;
     padding: 5px;
+}
+
+.lbl {
+    display: inline-block;
+    float: left;
+}
+
+.inpt, .txtArea {
+    display: block;
+    float: left;
+    width: 100%;
+    margin-bottom: 5px;
+    border-left: 1px solid #666;
+    border-bottom: 1px solid #666;
+    padding: 5px;
+}
+
+.sendBttn {
+    float:left;
+    padding: 5px;
+    border: 1px solid #666;
 }

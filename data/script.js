@@ -1,6 +1,5 @@
         var burger = document.getElementById('hamburger');
         var menu = document.getElementById('menu');
-
         var showMenu = function () {
             if (menu.style.display === 'block') {
                 menu.style.display = null;
@@ -8,43 +7,34 @@
                 menu.style.display = 'block';
             }
         }
-
         burger.addEventListener('click', showMenu, false);
+
 
         var contactData = document.getElementById('address').innerHTML;
         var contactBttn = document.getElementsByClassName('contact');
         var wrapper = document.getElementById('wrapper');
 
-        for (var cont = 0; cont < contactBttn.length; cont++) {
-            contactBttn[cont].addEventListener('click', showContact, false);
+        var showContact = function() {
+            this.style.disabled = 'disabled';
+            var box = document.createElement('div'),
+                closeBttn = document.createElement('button');
+            
+            box.className = 'popupAddress';
+            box.innerHTML = '<h2>Conctact us!</h2>'+contactData+'<form><label for="theme" class="lbl">Theme:</label><input class="inpt theme" id="theme"><label for="authorMail" class="lbl">Your mail:</label><input class="inpt authorMail" id="authorMail"><label for="message" class="lbl">Message:</label><textarea class="txtArea"></textarea><button class="sendBttn">Send</button></form>';
+            closeBttn.textContent = '[ x ]';
+            closeBttn.className = 'popupCloseBttn';
+            closeBttn.addEventListener('click',function ()                      {wrapper.removeChild(box);},false);
+            
+            box.appendChild(closeBttn);
+            wrapper.appendChild(box);
+            box.style.opacity = 0;
+            var alpha = 0;
+            setInterval(function(){
+                alpha += 0.1;
+                box.style.opacity = alpha;
+            },50);
         }
 
-        function showContact() {
-            var box = document.createElement('div'),
-                closeBttn = document.createElement('button'),
-                frm = document.createElement('form');
-            lbl = document.createElement('label'),
-                inpt = document.createElement('input'),
-                txtArea = document.createElement('textarea'),
-                sendBttn = document.createElement('button');
-            box.className = 'popupAddress footer-content';
-            box.innerHTML = contactData;
-            closeBttn.innerHTML = '[close]';
-            closeBttn.className = 'popupCloseBttn';
-            closeBttn.addEventListener('click', function () {
-                wrapper.removeChild(box);
-            }, false);
-            lbl.textContent = 'Theme: ';
-            lbl.className = 'label';
-            inpt.className = 'inpt';
-            txtArea.className = 'txtArea';
-            sendBttn.className = 'sendBttn';
-
-            box.appendChild(closeBttn);
-            box.appendChild(frm);
-            box.appendChild(lbl);
-            box.appendChild(inpt);
-            box.appendChild(txtArea);
-            box.appendChild(sendBttn);
-            wrapper.appendChild(box);
+        for (var cont = 0; cont < contactBttn.length; cont++) {
+            contactBttn[cont].addEventListener('click', showContact, false);
         }
