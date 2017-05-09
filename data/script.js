@@ -29,9 +29,12 @@
             wrapper.appendChild(box);
             box.style.opacity = 0;
             var alpha = 0;
-            setInterval(function(){
+            var si = setInterval(function(){
                 alpha += 0.1;
                 box.style.opacity = alpha;
+                setTimeout(function(){
+                    clearInterval(si);
+                },600);
             },50);
         }
 
