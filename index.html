@@ -1,151 +1,158 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <!--external css-->
-    <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Lato:300,400,700|Roboto:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="data/style.css">
-    <!--LESS file-->
-    <link rel="stylesheet/less" href="data/style.less">
-    <script src="E:/www/____skrypty/less.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="E:/www/____skrypty/bootstrap.css/css/bootstrap.css">
+    <link rel="stylesheet" href="E:/www/____skrypty/font-awesome.min.css">
+    <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css ">
+    <link rel="stylesheet" href="hs-style.css">
     <title>Hair Salon</title>
 </head>
 
 <body>
-    <div class="wrapper" id="wrapper">
-        <header class="header" id="home">
-            <div class="header-wrapper">
-                <div class="header-info">
-                    Hours: Mon,Tue,Fri,Saturday 10am - 8pm By Appointment Only
-                </div>
-                <div class="content">
-                    <div class="header-logo">
-                        <img src="data/img/logo.png" alt="Hair Salon. We are best in hair services!">
-                    </div>
-                    <div class="header-contact">
-                        <span class="header-contact-ask">
-                            Ask our experts
-                        </span>
-                        <span class="header-contact-number">
-                            <a href="tel:0987654321" type="tel">
-                                0987654321
-                            </a>
-                    </span>
-                    </div>
+   <div id="slider" class="container-fluid">
+   <div class="row">
+   <div class="col-sm-12">
+   <img src="img/bg.jpg" alt="">
+   </div>
+   </div>
+    </div>
+    <div id="sliderOffset">
+    <section id="openHours">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 text-center">
+                    Open hours: 8:00 - 20:00, Saturdays on appointment only
                 </div>
             </div>
-            <button class="hamburger" id="hamburger">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
-            <ul class="header-menu" id="menu">
-                <li class="header-menu-item"><a href="#home">home</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#about">about</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#">gallery</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#pricelist">pricelist</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#treatments">treatments</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#map">map</a></li>
-                <!--
-                -->
-                <li class="header-menu-item"><a href="#contact" class="contact">contact us</a></li>
-            </ul>
-            <div class="header-scissors"></div>
-        </header>
-        <div class="slider">
-            <img src="data/img/salonExperience.png" class="slider-salonExp" alt="">
         </div>
-        <article class="welcomeToOurSalon" id="about">
-            <div class="content-main content-paddingTopBottom">
-                <h2>Welcome to <strong>Hair Salon</strong></h2>
-                <p>
-                    Lorem pipsum dolor sit amet, consectetur adipiscing elit. Donec dui elit, rutrum non euismod ut, commodo eget turpis. Donec nisi leo, fermentum id dignissim in, ultrices a mi.
-                    <br> Donec elit purus, hendrerit tristique nulla vel, pellentesque mattis mi. Nullam eu suscipit est, vitae pretium sapien.
-                    <br> Vestibulum sollicitudin lorem nec orci ornare eleifend ac eu turpis. Curabitur sed sollicitudin nulla. Integer tortor metus finibus.
-                </p>
-                <img src="data/img/waves.png" alt="waved underline">
-            </div>
-        </article>
-        <!-- welcomeToOurSalon E N D -->
-
-        <article class="treatments" id="treatments">
-            <div class="content-main">
-                <div class="treatments-item">
-                    <div class="treatments-item-horizontal">
-                        <div class="tih-content">
-                             <img src="data/img/item1.jpg" alt="item1" class="treatments-image left">
-                            
-                        </div>
-                        <div class="tih-content text">
-                          <h1>
-                                Hair Care
-                            </h1>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis rerum nam, amet magnam cumque fugit provident possimus tempora aut veniam qui tempore quam placeat porro doloremque.
-                            <div class="more">
-                                <a href="#" class="more-href">
-                        More...
-                        </a>
-                            </div>
-                        </div>
-                    </div>
+    </section>
+    <section id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-5 col-sm-offset-1 logo-wrapper">
+                    <img src="img/logo.png" class="logo_img" alt="Hair Salon logo">
                 </div>
-                <div class="treatments-item">
-                    <div class="treatments-item-vertical">
-                        <div class="tiv-content">
-                            <img src="data/img/item2.jpg" alt="item1" class="treatments-image">
-                        </div>
-                        <div class="tiv-content text" id="pricelist">
-                            <h1>
-                                Our Service
-                            </h1>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis rerum nam, amet magnam cumque fugit provident possimus tempora aut veniam qui tempore quam placeat porro doloremque.
-                            <div class="more">
-                                <a href="#" class="more-href">
-                        More...
-                        </a>
-                            </div>
-                        </div>
-                    </div><!--
-                    --><div class="treatments-item-vertical">
-                        <div class="tiv-content">
-                            <img src="data/img/item3.jpg" alt="item1" class="treatments-image">
-                        </div>
-                        <div class="tiv-content text">
-                            <h1>
-                                What's New
-                            </h1>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quis rerum nam, amet magnam cumque fugit provident possimus tempora aut veniam qui tempore quam placeat porro doloremque.
-                            <div class="more">
-                                <a href="#" class="more-href">
-                        More...
-                        </a>
-                            </div>
-                        </div>
+                <div class="col-sm-5 contact text-right">
+                   <a href="tel:123456789">
+                    <p class="contact_text">ask our experts</p>
+                    <p class="contact_phone">123456789</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="text-center">
+           <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                   <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu">
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="main-menu">
+                    <ul class="nav navbar-nav main-menu" role="navigation">
+                        <li>
+                            <a href="#">
+                                home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                gallery
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                pricelist
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                treatments
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                map
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                contact us
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
                     </div>
                 </div>
             </div>
-        </article>
-        <!-- heirCare E N D -->
-
-
-        <article class="serviceAndProcedures">
-            <div class="content-main content-paddingTopBottom">
-                <div class="ourServices">
-                    <h2>Our Services</h2>
-                    <ul>
+    </section>
+    </div>
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-10 col-sm-offset-1 text-center">
+                   <h1>Welcome to <strong>Hair Salon</strong></h1>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo debitis a cum ipsum nemo facilis, voluptates reiciendis. Nesciunt, a totam mollitia illum quibusdam voluptatum consectetur necessitatibus, dolore accusamus numquam autem.
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="offer">
+        <div class="container">
+            <div class="row offer_level1">
+                <div class="col-sm-6 offer_img">
+                    <img src="img/item1.jpg" alt="">
+                </div>
+                <div class="col-sm-6">
+                   <h1>Hair Care</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni odio maiores, sequi vero pariatur officiis eaque est fugit nihil distinctio ad, omnis neque ut facilis? Perferendis nihil odit sit quos.</p>
+                    <p class="more"><a href="#">more</a></p>
+                </div>
+            </div>
+               <div class="row offer_level2">
+                <div class="col-sm-6">
+                    <div class="col-sm-12 offer_img">
+                        <img src="img/item2.jpg" alt="">
+                    </div>
+                    <div class="col-sm-12">
+                       <h1>Our Service</h1>
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa at voluptatibus consectetur fugit nostrum, quisquam, nihil enim ipsam, veniam neque omnis in cum, repellat maiores. Expedita earum beatae, doloribus. Fuga!
+                        </p>
+                        <p class="more"><a href="#">more</a></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="col-sm-12 offer_img">
+                        <img src="img/item3.jpg" alt="">
+                    </div>
+                    <div class="col-sm-12">
+                       <h1>What's New</h1>
+                       <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor maxime, deserunt minima maiores! Soluta eos beatae sequi illum porro, eius, dolorem omnis sint harum quidem doloremque blanditiis laborum adipisci totam.
+                        </p>
+                        <p class="more"><a href="#">more</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="procedures">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                   <h3>Our services</h3>
+                    <ul class="procedures-list">
                         <li>
                             Restyle
                         </li>
@@ -192,164 +199,137 @@
                         <!--
                         -->
                         <li>
-                            Wash Dry & GHD Straightening
+                            Wash Dry &amp; GHD Straightening
                         </li>
                         <!--
                         -->
                         <li>
-                            Wash Dry & GHD Curls
+                            Wash Dry &amp; GHD Curls
                         </li>
                         <!--
                         -->
                         <li>
                             Hair Up</li>
                     </ul>
-                    <div class="more">
-                        <a href="#" class="more-href">
-                            More...
-                        </a>
-                    </div>
+                    <p class="more"><a href="#">more</a></p>
                 </div>
-                <div class="popularProcedures">
-                    <h2>Most Popular Procedures</h2>
-                    <div class="gents">
-                        <div class="gents-img">
-                            <img src="data/img/gents.jpg" alt="some pic">
-                        </div>
-                        <div class="gents-content">
-                            <h3>
-                                Gents Special Cut
-                            </h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque explicabo tempora, eos asperiores architecto aperiam dolorem nam vitae. Aut assumenda veritatis commodi ut, harum voluptates nostrum ad officia quisquam eveniet.
-                            <div class="more">
-                                <a href="#" class="more-href">
-                            More...
-                        </a>
-                            </div>
+                <div class="col-sm-9 popular">
+                  <h3>Most poular procedures</h3>
+                   <div class="row">
+                    <div class="col-sm-4">
+                       <div class="popular_img-wrapper">
+                        <img src="img/gents.jpg" alt="">
                         </div>
                     </div>
-
-                    <div class="ladies">
-                        <div class="ladies-img">
-                            <img src="data/img/ladies.jpg" alt="some pic">
+                    <div class="col-sm-8">
+                     <h3>Gents special cut</h3>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero quasi consequatur quis commodi dolorem possimus placeat, error molestias voluptas sit deserunt, rem nulla dignissimos suscipit, dolore ullam natus corrupti asperiores!</p>
+                      <p class="more"><a href="#">more</a></p>
+                       </div>
+                    </div>
+                    <div class="row">
+                    <div class="col-sm-4">
+                       <div class="popular_img-wrapper">
+                        <img src="img/ladies.jpg" alt="">
                         </div>
-                        <div class="ladies-content">
-                            <h3>
-                                Ladies Special Cut
-                            </h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo ratione delectus, possimus reprehenderit suscipit adipisci enim quod sapiente magni modi voluptas, quibusdam et doloribus laudantium sit in veniam laboriosam, a!
-                            <div class="more">
-                                <a href="#" class="more-href">
-                            More...
-                        </a>
-                            </div>
-                        </div>
-
-
+                    </div>
+                    <div class="col-sm-8">
+                    <h3>Ladies special cut</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam architecto, harum totam provident. Debitis nisi itaque, iure vitae, molestiae commodi dignissimos expedita eveniet culpa ipsa deserunt, aspernatur mollitia. Nostrum, consequatur.</p>
+                    <p class="more"><a href="#">more</a></p>
+                    </div>
                     </div>
                 </div>
             </div>
-        </article>
-        <!-- servicesAndProcedures E N D 
-        -->
-        <article id="map" class="map">
-            <iframe class="map-size" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19480.552075180974!2d16.933504150838036!3d52.38729929882976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47045b03083f8b8f%3A0x783ac7212cca21a4!2zUmF0YWplLCBQb3puYcWE!5e0!3m2!1spl!2spl!4v1493029944768" frameborder="0" style="border:0" width="100%" height="320px" allowfullscreen></iframe>
-        </article>
-        <!-- 
-        FOOTER BEGINS 
-        ---------------------------------->
-        <footer class="footer left">
-            <div class="content-main content-paddingTopBottom">
-                <div class="footer-sections">
-                    <h3>
-                        About
-                    </h3>
-                    <div class="footer-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati dolorum consequatur, iusto sunt vel soluta qui dolorem unde facere maiores inventore iste mollitia nostrum eveniet, pariatur vero delectus ratione minima.
-                    </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container footer-flip">
+            <div class="row">
+                <div class="col-sm-3 footer_item">
+                    <h3>about</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio praesentium sunt vel repellat odio quis laudantium ullam ex, ratione, rerum! Quaerat excepturi magni repellat aperiam eligendi numquam harum laborum vero.
+                    </p>
                 </div>
-                <!--
-                -->
-                <div class="footer-sections">
-                    <h3>
-                        Links
-                    </h3>
-                    <nav class="footer-content">
-                        <ul>
-                            <li><a href="#home">
-                        Home
-                        </a></li>
-                            <li><a href="#about">
-                        About
-                        </a></li>
-                            <li><a href="#gallery">
-                        Gallery
-                        </a></li>
-                            <li><a href="#pricelist">
-                        Pricelist
-                        </a></li>
-                            <li><a href="#treatments">
-                        Treatments
-                        </a></li>
-                            <li><a href="#map">
-                        Map
-                        </a></li>
-                            <li><a href="#contact" class="contact">
-                        Contact us
-                        </a></li>
-                        </ul>
-                    </nav>
+                <div class="col-sm-3 footer_item">
+                    <h3>links</h3>
+                    <ul class="footer_menu">
+                        <li>
+                            <a href="#">
+                                home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                gallery
+                            </a>
+                        </li>
+                        <li>
+                        <a href="#">
+                pricelist
+            </a></li>
+                        <li><a href="#">
+                treatments
+            </a></li>
+                        <li><a href="#">
+                map
+            </a></li>
+                        <li><a href="#">
+                contact us
+            </a></li>
+                    </ul>
                 </div>
-                <!--
-                -->
-                <div class="footer-sections">
-                    <h3>Get in touch</h3>
-                    <div class="footer-content">
-                        <img src="data/img/git_yt.jpg" alt="Facebook">
-                        <img src="data/img/git_yt.jpg" alt="Twitter">
-                        <img src="data/img/git_yt.jpg" alt="LinkedIn">
-                        <img src="data/img/git_yt.jpg" alt="You Tube">
-                        <img src="data/img/git_yt.jpg" alt="Google Plus">
-                        <img src="data/img/git_yt.jpg" alt="Pinerest">
-                    </div>
+                <div class="col-sm-3 footer_item">
+                    <h3>get in touch</h3>
+                    <img src="img/git_yt.jpg" alt="">
+                    <img src="img/git_yt.jpg" alt="">
+                    <img src="img/git_yt.jpg" alt="">
+                    <img src="img/git_yt.jpg" alt="">
+                    <img src="img/git_yt.jpg" alt="">
+                    <img src="img/git_yt.jpg" alt="">
                 </div>
-                <!--
-                -->
-                <div class="footer-sections">
-                    <h3>Address</h3>
-                    <address class="footer-content" id="address">
-                        <span class="address-post">
-                            Company Addres,<br>
-                            Street No. 123, City,<br>
-                            Country 987654
-                        </span>
-                        <span class="address-tel">
-                           <a href="tel:0987654321">
-                           09876543210
-                           </a>
-                        </span>
-                        <span class="address-mail">
-                           <a href="mailto:info@companyname.com">
-                           info@companyname.com</a>
-                        </span>
+                <div class="col-sm-3 footer_item">
+                    <h3>address</h3>
+                    <address>
+                       <p class="adress_street">
+                        Company Addres,
+                        Street No. 123, City,
+                        Country 987654</p>
+                        <p class="adress_phone">
+                        <a href="tel:09876543210">09876543210</a>
+                        </p>
+                        <p class="adress_mail">
+                        <a href="mailto:info@companyname.com">info@companyname.com</a>
+                        </p>
                     </address>
                 </div>
             </div>
-        </footer>
-        <div class="footer-bottom">
-            <div class="content-main">
-                <span class="footer-copyright left">
-                        Copyright © 2017 Hair Salon. All Rights Reserved
-                    </span>
-                <span class="footer-psdsource right">
-                        Web Design Company | <a href="http://psdfreedownload.com/">
-                        PSDFreeDownload.com</a>
-                    </span>
+        </div>
+    </section>
+    <section id="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    Copyright © 2017 Hair Salon. All Rights Reserved
+                </div>
+                <div class="col-sm-6 text-right">
+                    Web Design Company | <a href="http://PSDFreeDownload.com" target="_blank">PSDFreeDownload.com</a>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- wrapper END -->
-
-    <script src="data/script.js" type="text/javascript"></script>
-
+    </section>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="hs-script.js"></script>
 </body>
 
 </html>

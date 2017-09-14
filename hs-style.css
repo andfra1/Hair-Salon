@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css?family=Great+Vibes&subset=latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&subset=latin-ext');
+
+#slider {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    padding-top: 60px;
+    overflow: hidden;
+}
+
+#slider img {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+#sliderOffset {
+    position: relative;
+    height: 100vh;
+    z-index: 3;
+}
+
+section {
+    position: relative;
+    z-index: 2;
+}
+
+h1, h2, h3, h4, .more {
+    font-family: 'Great Vibes',sans-serif;
+}
+
+.more {
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.more a {
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+h3 {
+    text-transform: capitalize;
+    font-size: 35px
+}
+
+#header {
+    padding-bottom: 20px;
+}
+
+#header .logo > img {
+    max-width: 100%;
+    transition: all 0.3s;
+}
+
+#header .contact {
+    padding-top: 10px;
+}
+
+#header .contact a {
+    text-decoration: none;
+}
+
+#header .contact .contact_text {
+    position: relative;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #000;
+    line-height: 35px;
+}
+
+#header .contact * {
+    margin: 0;
+}
+
+#header .contact .contact_text:before {
+    content: '\f095';
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: FontAwesome;
+    font-size: 16px;
+    width: 35px;
+    height: 35px;
+    line-height: 32px;
+    text-align: center;
+    background-color: #ccc;
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+#header .contact:hover .contact_text:before, .contact_text:hover:before {
+    color: lawngreen;
+    background-color: #000;
+    border: 2px solid lawngreen;
+}
+
+#header .contact .contact_phone {
+    position: relative;
+    font-size: 35px;
+    color: #000;    
+}
+
+#openHours {
+    display: none;
+}
+
+#main-menu {
+    text-align: center;
+}
+
+.is-fixed {
+    position: fixed;
+    left: 0;
+    width: 100%;
+}
+
+.menu-fromTop {
+    top: 50px;
+}
+
+.is-fixed_logo {
+    height: 30px;
+    padding: 0px;
+}
+
+.navbar-nav, .navbar-nav > li {
+    float: none;
+}
+
+.displayNone {
+    display: none;
+}
+
+.navbar-toggle {
+    background-color: transparent;
+}
+
+.icon-bar {
+    background-color: #ccc;
+}
+
+.main-menu li {
+    display: inline-block;
+    border-right: 1px solid #fff;
+}
+
+.main-menu li:last-child {
+    border: 0;
+}
+
+.main-menu li a {
+    text-transform: uppercase;
+    color: #ccc;
+}
+
+.main-menu li a:hover, .main-menu li a:focus {
+    background-color: transparent;
+    color: #fff;
+}
+
+#menu, #intro, #offer, #procedures, #copyright {
+    background-color: #000;
+    color: #fff;
+}
+
+#intro {
+    padding: 20px;
+}
+
+#offer h1 {
+    font-size: 48px;
+}
+
+#offer .offer_img {
+    background-color: #fff;
+    padding: 0;
+}
+
+#offer .offer_img img {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+.offer_level1, .offer_level2 {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.offer_level2 .col-sm-6 {
+    padding: 0;
+}
+
+#procedures .popular_img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 140px;
+    margin-top: 30px;
+    background-color: #fff;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+#procedures .popular img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    transition: all 0.3s;
+}
+
+#procedures .popular img:hover {
+    transform: translate(-50%, -50%);
+    width: 120%;
+}
+
+.procedures-list {
+    list-style: none;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.procedures-list li {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.procedures-list li:before, #footer .footer_menu > li:before {
+    content: '\f105';
+    position: absolute;
+    top: 4px;
+    left: -22px;
+    font-family: FontAwesome;
+    color: #000;
+    line-height: 17px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 17px;
+    height: 17px;
+}
+
+.procedures-list li a {
+    color: #fff;
+}
+
+#footer {
+    background-color: #fff;
+    perspective: 1000px;
+    overflow: hidden;
+}
+
+#footer > .footer-flip {
+    padding: 20px 0;
+    transform: rotateX(90deg);
+    transform-origin: top center;
+    transition: 0.5s;
+}
+
+#footer address p {
+    margin-left: 15px;
+}
+
+.footer_item {
+    border-right: 1px solid #ccc;
+}
+
+.footer_item:last-child {
+    border: 0;
+}
+
+.footer_menu li {
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer_menu li a {
+    color: #000;
+}
+
+#footer address p {
+    position: relative;
+}
+
+#footer address p a {
+    color: #000;
+}
+
+#footer address > *:before {
+    position: absolute;
+    font-family: FontAwesome;
+    color: #000;
+    left: -20px;
+    top: 0;
+    width: 15px;
+    text-align: right;
+    transition: color 0.3s;
+}
+
+#footer address > *:hover:before {
+    color: #5a9ed8;
+}
+
+#footer address > p.adress_street:before {
+    content: '\f041';
+}
+
+#footer address > p.adress_phone:before {
+    content: '\f095';
+}
+
+#footer address > p.adress_mail:before {
+    content: '\f0e0';
+}
+
+#copyright {
+    padding: 10px 0;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    
+    #header .logo, #header .contact {
+        text-align: center;
+        background-color: rgba(255,255,255,0.5);
+    }
+    
+    #menu {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: transparent;
+    }
+    
+    #menu > .container {
+        padding: 0;
+    }
+    
+    .main-menu li {
+        display: inline-block;
+        border: 1px solid #fff;
+        margin: 5px;
+        background-color: #000;
+        box-shadow: 5px 5px 7px -5px #666;
+        width: 140px;
+    }
+
+    .main-menu li:last-child {
+        border: 1px solid #fff;
+        background-color: #000;
+    }
+
+    #footer > .footer-flip {
+        transform: rotateX(0deg);
+        transform-origin: top center;
+        transition: 0.5s;
+    }
+    
+    #footer .footer_item {
+        border: 0;
+        padding-bottom: 5px;
+    }
+}
